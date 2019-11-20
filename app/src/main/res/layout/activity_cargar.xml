@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradStar">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:src="@drawable/html_bg"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+
+    <Spinner
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/Spinnersensores"
+        android:layout_marginTop="138dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="@string/app_sensores"
+        android:id="@+id/editText"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/Spinnersensores"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp" />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:text="@string/app_medios"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/editText3"
+
+        android:text="@string/app_actuadores"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Spinner
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/SpinnerMedios"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/Spinnersensores"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="@string/VerGrafica"
+        android:onClick="VerGraficas"
+        android:id="@+id/btnVerGraficas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:onClick="updateData"
+        android:id="@+id/btnUpdate"
+        android:text="@string/nuevo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/SpinnerActuadores"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/SpinnerMedios"
+        android:layout_alignStart="@+id/SpinnerMedios"
+        android:spinnerMode="dropdown"
+        />
+
+</RelativeLayout>

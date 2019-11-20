@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">SCMD</string>
+    <string name="subir">Subir</string>
+    <string name="refresh">Refrescar</string>
+    <string name="agregar_modulos_para_configurar"> Agregue Los Modulos Para Configurar</string>
+    <string name="agregarmodulos">Agregar Modulo</string>
+    <string name="sens">Sensor</string>
+    <string name="act">Actuador</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="med">Medio</string>
+    <string name="automatico">automatico</string>
+    <string name="no">No debe contener un email con un punto antes del "@" </string>
+    <string name="conecciones">Conecciones</string>
+    <string name="add">add</string>
+    <string name="next">Next</string>
+    <string name="input_text">Input text</string>
+    <string name="video">video</string>
+    <string name="BD">Base de Datos</string>
+    <string name="input_new_item">Input new item</string>
+    <string name="enter_email">Ingrese Email</string>
+    <string name="enter_password">Ingrese Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="login">Login</string>
+    <string name="toma">toma</string>
+    <string name="carga">Cargar</string>
+    <string name="humedad">Humedad</string>
+    <string name="puerta">puerta</string>
+    <string name="luces">luces</string>
+    <string name="aire">aire</string>
+    <string name="temp">temp</string>
+    <string name="ventana">ventana</string>
+    <string name="submit">Submit</string>
+    <string name="Ingrese_Texto">Ingrese Texto</string>
+    <string name="Camara_de_Seguridad">Camara de Seguridad</string>
+    <string name="next1">Next</string>
+    <string name="back">Back</string>
+    <string name="show">Show</string>
+    <string name="setintensitivity">Setear Intensidad</string>
+    <string name="Luz">Luz</string>
+    <string name="Play">Play</string>
+    <string name="Save_Changes">Save Changes</string>
+    <string name="set_to_back">Back to Set</string>
+    <string name="save_sensing_items">Save Sensing Items</string>
+    <string name="Back_to_interact">INTERACT</string>
+    <string name="DataBase">DataBaseLoad</string>
+    <string name="app_sensores">Sensores</string>
+    <string name="bddb">Base De Datos</string>
+    <string name="cell"> Celular </string>
+    <string name="app_actuadores">Actuadores</string>
+    <string name="app_registrar">Registrar</string>
+   <string name="app_medios">Medios</string>
+   <string name="app_names">Ingrese nombre</string>
+   <string name="app_nuevousuario">Send</string>
+   <string name="Ventilador">Ventilador</string>
+    <string name="warning">Se debe seleccionar un item</string>
+    <string name="Update">Actualizar</string>
+    <string name="intensidad">Intensidad</string>
+    <string name="estufas">Estufas</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="cambiar">IN/CH</string>
+    <string name="VerGrafica">Ver Graficas</string>
+    <string name="Movimiento">Sensor de Movimiento </string>
+
+    <string name="upload">upload</string>
+    <string name="request_permission">Request Permission</string>
+    <string name="seguir">Seguir</string>
+
+    <string name="set">set</string>
+    <string name="start_video">Start Video</string>
+
+    <string-array name="Sensores_array">
+      <item>temperatura</item>
+       <item>calidad del aire</item>
+       <item>humedad</item>
+       <item>corriente</item>
+       <item>iluminacion</item>
+       <item>movimiento</item>
+   </string-array>
+
+    <string-array name="Actuadores_array">
+        <item>rele de estado solido</item>
+        <item>rele de estado solido</item>
+        <item>rele de estado solido</item>
+        <item>rele de estado solido</item>
+        <item>dimmer</item>
+        <item>reguladores</item>
+    </string-array>
+
+
+    <string-array name="Medios_array">
+        <item>toma</item>
+        <item>ventilador</item>
+        <item>puerta</item>
+        <item>luces</item>
+        <item>intensidad</item>
+        <item>estufas</item>
+
+    </string-array>
+</resources>
+

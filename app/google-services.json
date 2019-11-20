@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "390570695334",
+    "firebase_url": "https://fir-domotica-3f5c2.firebaseio.com",
+    "project_id": "fir-domotica-3f5c2",
+    "storage_bucket": "fir-domotica-3f5c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390570695334:android:abef499ce726fc91",
+        "android_client_info": {
+          "package_name": "com.seguridadinteligente.domotica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390570695334-pc5vvm48fiv9b0d3g6of66ckmlfb9odp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seguridadinteligente.domotica",
+            "certificate_hash": "eb6b73533c3b238306a7a82ef9ad28de505ee71a"
+          }
+        },
+        {
+          "client_id": "390570695334-nugputpg8mcggq58kmka1v8p63lhd7jr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seguridadinteligente.domotica",
+            "certificate_hash": "45c26f420d3d25c6ed65740fe992ef70d885f877"
+          }
+        },
+        {
+          "client_id": "390570695334-klj8o0lj1ou8c070fk84h38kqkoklvte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNCvGNjZu75_ijki7ERP7Tclk9W6Bn1B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390570695334-klj8o0lj1ou8c070fk84h38kqkoklvte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

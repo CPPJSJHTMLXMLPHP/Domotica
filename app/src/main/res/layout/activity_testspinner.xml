@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradStar">
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:src="@drawable/html_bg"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_above="@+id/textViewagregar"
+    android:layout_toStartOf="@+id/Spinnersensores" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        android:text="@string/agregar_modulos_para_configurar"
+        android:id="@+id/textViewagregar"
+        android:layout_above="@+id/editText6"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText6"
+        android:text="@string/sens"
+        android:layout_above="@+id/editText7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText7"
+        android:text="@string/med"
+        android:layout_above="@+id/editText8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText8"
+        android:text="@string/act"
+        android:layout_above="@+id/Spinnersensores"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/editText9"
+        android:text="@string/agregarmodulos"
+        android:layout_above="@+id/textViewagregar"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="@string/agregarmodulos"
+        android:background="@color/gradStar"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/buttonnm"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_alignTop="@+id/btnUpdate" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/Spinnersensores"
+        android:entries="@array/Sensores_array"
+        android:layout_above="@+id/editText2"
+        android:layout_alignStart="@+id/SpinnerMedios"
+        android:layout_alignEnd="@+id/SpinnerActuadores" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/app_sensores"
+        android:id="@+id/editText"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/Spinnersensores"
+        android:layout_alignBottom="@+id/Spinnersensores"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/app_medios"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/editText2"
+        android:layout_alignBaseline="@+id/SpinnerMedios"
+        android:layout_alignBottom="@+id/SpinnerMedios"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:id="@+id/editText3"
+
+        android:text="@string/app_actuadores"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_above="@+id/btnVerGraficas"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/SpinnerMedios"
+        android:entries="@array/Medios_array"
+        android:layout_above="@+id/SpinnerActuadores"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginStart="59dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="@string/VerGrafica"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/gradStar"
+        android:onClick="VerGraficas"
+        android:id="@+id/btnVerGraficas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toStartOf="@+id/buttonnm" />
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:onClick="updateData"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/gradStar"
+        android:id="@+id/btnUpdate"
+        android:text="@string/nuevo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/buttonnm" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/SpinnerActuadores"
+        android:entries ="@array/Actuadores_array"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_alignStart="@+id/SpinnerMedios" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradStar" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/vidcam"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView4" />
+
+
+ <TextView
+     android:id="@+id/t5"
+     android:layout_width="match_parent"
+     android:layout_height="27dp"
+     android:textColor="@color/white"
+     android:text="@string/Camara_de_Seguridad"
+     android:layout_below="@+id/imageView4"
+     android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/t6"
+        android:layout_alignParentStart="true" />
+
+
+    <WebView
+        android:id="@+id/visweb"
+
+        android:layout_width="match_parent"
+        android:layout_height="990dp"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_below="@+id/t5" />
+
+    <Button
+        android:id="@+id/buttontuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorial"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/t6"
+        android:layout_alignParentStart="true" />
+    <Chronometer
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/gradStar"
+        android:id="@+id/cronometrostart"
+        android:layout_below="@+id/t6"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

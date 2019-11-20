@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gradStar"
+        android:id="@+id/activity_interact">
+
+        <ImageView
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:id="@+id/image7"
+        android:src="@drawable/door"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/image5"
+            android:layout_alignStart="@+id/image3" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/login"
+            android:background="@color/gradStar"
+            android:id="@+id/home"
+            android:onClick="home"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/upload"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/nextActivityButton" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:id="@+id/image4"
+        android:src="@drawable/current"
+        android:layout_below="@+id/image"
+        android:layout_toStartOf="@+id/switch1" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:id="@+id/image3"
+        android:background="@color/gradStar"
+        android:src="@drawable/idea"
+        android:onClick="AbrirLuz"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/switch2" />
+
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="150dp"
+            android:id="@+id/image"
+            android:src="@drawable/html_bg"
+            android:layout_centerHorizontal="true"
+            android:onClick="AbrirLuz"
+            android:layout_below="@+id/switchauto" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/heater"
+            android:id="@+id/imageView"
+            android:layout_alignTop="@+id/image3"
+            android:layout_toStartOf="@+id/switch5" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:id="@+id/image6"
+            android:src="@drawable/ventilador"
+            android:layout_below="@+id/image"
+            android:layout_toStartOf="@+id/switch4" />
+        <Switch
+        android:text="@string/luces"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageView" />
+        <Switch
+            android:text="@string/puerta"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/switch3"
+            android:layout_marginTop="16dp"
+            android:layout_alignTop="@+id/image7"
+            android:layout_toEndOf="@+id/image7" />
+        <Switch
+            android:text="@string/Ventilador"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch4"
+            android:layout_alignBaseline="@+id/switch1"
+            android:layout_alignBottom="@+id/switch1"
+            android:layout_toEndOf="@+id/nextActivityButton" />
+        <Switch
+        android:text="@string/toma"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/image"
+            android:layout_toStartOf="@+id/image6" />
+
+        <Switch
+            android:text="@string/estufas"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch5"
+            android:layout_alignBaseline="@+id/switch2"
+            android:layout_alignBottom="@+id/switch2"
+            android:layout_alignEnd="@+id/switch4" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:id="@id/image5"
+            android:src="@drawable/sensor"
+            android:layout_below="@+id/imageView"
+            android:layout_toStartOf="@+id/switch7"
+            android:layout_marginTop="40dp" />
+
+        <Switch
+            android:text="@string/Movimiento"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:id="@+id/switch7"
+            android:layout_marginStart="12dp"
+            android:layout_alignTop="@+id/switch3"
+            android:layout_toEndOf="@+id/nextActivityButton" />
+
+
+
+        <Button
+            android:text="@string/video"
+            android:textColor="@color/colorPrimary"
+            android:onClick="Siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextActivityButton"
+            android:background="@color/gradStar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/home" />
+
+
+        <Switch
+            android:text="@string/automatico"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:id="@+id/switchauto"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/image6" />
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:id="@+id/DataBase"
+            android:text="@string/BD"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/gradStar"
+            android:onClick="DataBase"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/switchauto" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/upload"
+            android:text="@string/subir"
+            android:onClick="SenderData"
+            android:background="@color/gradStar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/nextActivityButton" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
